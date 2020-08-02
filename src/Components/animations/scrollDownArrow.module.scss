@@ -1,0 +1,20 @@
+// @import "../node_modules/bootstrap/scss/_functions.scss";
+@import '../../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../../node_modules/bootstrap/scss/variables.scss';
+@import '../../../node_modules/bootstrap/scss/mixins/breakpoints.scss';
+
+.scroll_down_arrow_container {
+ width: 100%;
+ text-align: center;
+ position: absolute;
+ bottom: 2vh;
+}
+
+.scroll_down_arrow_icon {
+ height: 4.375rem;
+ width: 4.375rem;
+ @include media-breakpoint-up(sm) {
+  height: 9.375rem;
+  width: 9.375rem;
+ }
+}

@@ -1,0 +1,51 @@
+@import '../../styles/theme.module.scss';
+@import '../../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../../node_modules/bootstrap/scss/variables.scss';
+@import '../../../node_modules/bootstrap/scss/mixins/breakpoints.scss';
+
+.msform {
+ width: 100%;
+ margin: 3rem auto 0;
+ text-align: center;
+ position: relative;
+ display: inline-block;
+}
+.progressbar {
+ margin-bottom: 30px;
+ margin: 0 auto;
+ position: relative;
+ display: inline-block;
+ /*CSS counters to number the steps*/
+ counter-reset: step;
+}
+.progressbar li {
+ list-style-type: none;
+ color: white;
+ text-transform: uppercase;
+ font-size: 0.7rem;
+ float: left;
+ position: relative;
+ margin: auto 0.5rem;
+ word-wrap: break-word;
+ @include media-breakpoint-up(sm) {
+  margin: auto 3.125rem;
+  font-size: 1.2rem;
+ }
+}
+.progressbar li:before {
+ content: counter(step);
+ counter-increment: step;
+ width: 3.4rem;
+ display: block;
+ font-size: 2rem;
+ color: white;
+ padding: 0.4rem;
+ background: $main_color;
+ border-radius: 10%;
+ margin: 0 auto 5px auto;
+}
+.progressbar li.active:before,
+.progressbar li.active:after {
+ background: $fifth_color;
+ color: white;
+}

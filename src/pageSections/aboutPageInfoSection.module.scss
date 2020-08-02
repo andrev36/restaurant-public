@@ -1,0 +1,12 @@
+.section_wrapper {
+ margin: 0 auto 10px;
+ img {
+  max-width: 320px;
+  height: 320px;
+ }
+ article {
+  max-width: 300px;
+  margin: 20px;
+  align-self: flex-start;
+ }
+}

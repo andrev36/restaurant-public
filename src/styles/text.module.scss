@@ -1,0 +1,62 @@
+@import './theme.module';
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints.scss';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ color: $title_color;
+}
+
+p,
+span {
+ color: $text_color;
+}
+button {
+ position: relative;
+ top: 0px;
+ &:hover {
+  top: -5px;
+  transition: top 0.3s ease-in-out;
+ }
+}
+
+button {
+ span {
+  color: $button_text_color;
+ }
+}
+
+.text {
+ margin: 10px auto 40px;
+ color: $text_color;
+}
+
+.title {
+ color: $title_color;
+}
+
+.text_with_lines {
+ width: 100%;
+ text-align: center;
+ border-bottom: 1px solid $title_color;
+ line-height: 0.1em;
+ margin: 6.25rem 0 4rem;
+ font-size: 1.8rem;
+ @include media-breakpoint-up(sm) {
+  font-size: 2.5rem;
+ }
+ span {
+  background: $main_color;
+  padding: 0 2rem;
+  color: $title_color;
+ }
+ button {
+  padding: 0 20px;
+  font-size: 2rem;
+ }
+}

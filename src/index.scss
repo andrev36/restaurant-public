@@ -1,0 +1,12 @@
+// Overriding bootstrap colors:
+// https://stackoverflow.com/a/51929114/11788161
+
+// $main_color: #170600;
+// $button_text_color: #9f3109;
+// $text_color: #ad907e;
+// $title_color: #e38f24;
+// $fifth_color: #832808;
+$primary: #170600;
+$secondary: #832808;
+
+@import '~bootstrap/scss/bootstrap';

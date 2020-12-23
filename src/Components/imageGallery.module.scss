@@ -1,0 +1,17 @@
+.image_gallery {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ margin: 20px auto;
+ img {
+  position: relative;
+  top: 0px;
+  width: 25%;
+  min-width: 330px;
+  height: 410px;
+  :hover {
+   top: -5px;
+   transition: top 0.3s ease-in-out;
+  }
+ }
+}

@@ -1,0 +1,28 @@
+@import '../styles/theme.module.scss';
+
+.scrollTop {
+ position: fixed;
+ width: 3.75rem;
+ bottom: 20px;
+ right: 40px;
+ height: 3.75rem;
+ z-index: 2;
+ cursor: pointer;
+ animation: fadeIn 0.3s;
+ transition: opacity 0.4s;
+ opacity: 0.5;
+ color: $fifth_color;
+}
+
+.scrollTop:hover {
+ opacity: 1;
+}
+
+@keyframes fadeIn {
+ 0% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 0.5;
+ }
+}

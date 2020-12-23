@@ -1,0 +1,41 @@
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints.scss';
+
+.img_wrapper {
+ position: relative;
+ z-index: 0;
+}
+
+.img_responsive {
+ width: 100%;
+ height: 70vh;
+ object-fit: cover;
+ @include media-breakpoint-up(sm) {
+  height: 60vh;
+ }
+}
+
+.img_overlay {
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ text-align: center;
+}
+
+.img_overlay:before {
+ content: ' ';
+ display: block;
+}
+
+.main_page_logo_wrapper {
+ margin: 2em auto 1em;
+ display: block;
+ z-index: 1;
+ width: 15rem;
+ padding: 0.4em 1em;
+ background-color: rgba(23, 6, 0, 0.7);
+ border-radius: 10px;
+}

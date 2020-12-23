@@ -1,0 +1,35 @@
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/variables.scss';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints.scss';
+
+@mixin container_style {
+ text-align: center;
+ z-index: 0;
+ margin: auto;
+}
+
+.container_large {
+ @include container_style;
+ border-bottom: solid 1px black;
+ max-width: 500px;
+ @include media-breakpoint-up(sm) {
+  max-width: 1200px;
+ }
+}
+
+.flex_container {
+ @include container_style;
+ align-items: center;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ max-width: 500px;
+ @include media-breakpoint-up(sm) {
+  max-width: 800px;
+ }
+}
+
+.align_center_container {
+ display: inline-block;
+ vertical-align: middle;
+}

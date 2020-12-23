@@ -1,0 +1,17 @@
+@import '../../styles/theme.module.scss';
+
+.navbar-custom {
+ background-color: $main_color;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+ color: $title_color;
+}
+.navbar-custom .navbar-nav .nav-link {
+ color: $title_color;
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+ color: $fifth_color;
+}

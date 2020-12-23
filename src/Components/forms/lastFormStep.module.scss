@@ -1,0 +1,28 @@
+@keyframes spin {
+ 100% {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+ }
+}
+
+.loading_image {
+ width: 50px;
+ height: 50px;
+ animation: spin 4s linear infinite;
+}
+
+.last_form_step_section_wrapper {
+ margin: 1.625rem auto 1.625rem 2rem;
+ padding: 1.625rem auto;
+ text-align: left;
+ h5 {
+  span {
+   color: white;
+  }
+ }
+ h5 {
+  p {
+   color: white;
+  }
+ }
+}
